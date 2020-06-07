@@ -18,7 +18,7 @@ if (!mysqli_query($link, $query))
     exit();
 }
 // копируем в 'ft_minishop' данные из 'ecommerce.sql'
-shell_exec('mysql -u '.$username.' -p'.$password.' ft_minishop < ecommerce.sql');
+shell_exec('mysql -u '.$username.' -p'.$password.' ft_minishop < ./ecommerce.sql');
 
 // подключаемся к бд 'ft_minishop'
 $db = mysqli_connect($servername, $username, $password, 'ft_minishop');
@@ -41,7 +41,10 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 // подтягиваем из таблицы товаров все квадратные ковры
 $square_products = array();
 foreach ($squares as $square)
-    array_push($square_products, $products[$square['pid']]);
+{
+    // print_r($products[$square['pid'] - 1]);
+    array_push($square_products, $products[$square['pid'] - 1]);
+}
 
 // mysqli_free_result($result);
 // mysqli_close($db);

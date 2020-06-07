@@ -1,11 +1,11 @@
 <?php
 include("database.php");
 $src = $products;
-// if ($_GET["submit"] == "Submit")
-// {
-    // $src = $square_products;
-// }
-// else
+if ($_GET["submit"] == "Submit")
+{
+    $src = $square_products;
+}
+else
 $src = $products;
 ?>
     <?php
@@ -15,19 +15,19 @@ $src = $products;
         <div class="left">
                 <form action="." method="get">
                     <div class="frm-fld">
-                        <div class="frm">
+                        <div class="check">
                             <input type="checkbox" name="form" value="form">
                             <label for="form">форма</label>
                         </div>
-                        <div class="clr">
+                        <div class="check">
                             <input type="checkbox" name="form" value="color">
                             <label for="color">цвет</label>
                         </div>
-                        <div>
+                        <div class="check">
                             <input type="checkbox" name="form" value="material">
                             <label for="material">материал</label>
                         </div>
-                        <input type="submit" name="submit" value="Submit">
+                        <input type="submit" name="submit" value="OK">
                     </div>
                 </form>
         </div>

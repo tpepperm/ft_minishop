@@ -4,19 +4,26 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: 'Crimson Text', serif;
 }
 header{
-    height: 90px;
-    background-color: lightgreen;
+    background-color: lightgray;
 
     display: flex;
     justify-content: space-between;
 }
 
 footer{
-    height: 70px;
-    background-color: lightgreen;
+    height: 100px;
+    background-color:#e6e6e6;
     flex: 0 0 auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.copirigth > ul {
+    list-style: none;
+    padding-top: 15px;
 }
 
 .logo{
@@ -30,24 +37,28 @@ footer{
     /* width: 200px; */
     height: 50px;
     margin: 20px 20px 20px 0;
-    background-color: black;
+    background-color:rgb(122, 169, 238);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
+    font-family: 'Crimson Text', serif;
 }
 
 .account>a{
-    color: wheat;
+    color: white;
     width: 100%;
-    height: 100%;
+    height: 50%;
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    border-left: 1px solid lightgray;
 }
 
 .content{
     flex: 1 0 auto;
     display: flex;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 
 .main{
@@ -71,7 +82,8 @@ footer{
     margin: 1vh 1vw;
     width: 24vw;
     height: 33vh;
-    background-color: orangered;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +112,7 @@ footer{
 }
 
 .price{
-    background-color: black;
+    background-color: #577FBB;
     width: 50%;
     height: 99%;
     color: white;
@@ -111,7 +123,7 @@ footer{
     justify-content: center;
 }
 .price>div{
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     height: 100%;
 }
@@ -124,39 +136,54 @@ footer{
 .add-to-cart{
     width: 50%;
     height: 99%;
-    background-color: firebrick;
 }
 
 .add-to-cart>button{
     width: 100%;
     height: 100%;
-    background-color: yellow;
+    background-color: rgb(255, 243, 134);
     border: none;
     cursor: pointer;
+}
+
+.add-to-cart>button:hover {
+    background-color: rgb(251, 228, 13);
 }
 
 /*left*/
 .left{
     display: flex;
     margin: 1vh 1vw;
-    min-width: 24vh;
-    background-color: slategray;
+    margin-right: 0;
+    min-width: 26vh;
+    height: 265px;
+    background-color: rgb(209, 223, 236);
+    border-radius: 5px;
 }
 
 .left>form {
     margin: 10px 2% 0 12%;
-    font-size: 26px;
+    font-size: 15px;
+}
+
+.frm-fld {
+    padding-top: 20px;
+}
+
+.check {
+    padding-bottom: 20px;
 }
 
 input[type="submit"]{
-    width: 150px;
+    width: 120px;
+    height: 25px;
     border: none;
     cursor: pointer;
-    background-color: orangered;
+    background-color: rgb(126, 176, 250);
     border-radius: 10px;
 }
 input[type="submit"]:hover{
-    border: 1px solid greenyellow;
+    background-color: rgb(65, 141, 255);
 }
 
 label{
