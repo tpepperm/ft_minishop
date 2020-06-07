@@ -21,18 +21,18 @@ if (!mysqli_query($link, $query))
 shell_exec('mysql -u '.$username.' -p'.$password.' ft_minishop < ecommerce.sql');
 
 // подключаемся к бд 'ft_minishop'
-$sql = mysqli_connect($servername, $username, $password, 'ft_minishop');
+$db = mysqli_connect($servername, $username, $password, 'ft_minishop');
 
 // берем все товары из бд
 $query = "SELECT * FROM products";
-$result = mysqli_query($sql, $query);
+$result = mysqli_query($db, $query);
 $products = array();
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
     array_push($products, $row);
 
 // берем все категории из бд
 $query = "SELECT * FROM categories";
-$result = mysqli_query($sql, $query);
+$result = mysqli_query($db, $query);
 // сохраняем информацию о всех квадратных коврах
 $squares = array();
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
@@ -43,6 +43,6 @@ $square_products = array();
 foreach ($squares as $square)
     array_push($square_products, $products[$square['pid']]);
 
-mysqli_free_result($result);
-mysqli_close($sql);
+// mysqli_free_result($result);
+// mysqli_close($db);
 ?>

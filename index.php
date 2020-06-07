@@ -8,22 +8,9 @@ $src = $products;
 // else
 $src = $products;
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ft_minishop</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <!-- <div class="logo"> -->
-        <img class="logo" src="img/logo.png"><h1>Ковры. Дорого</h1>
-        <!-- </div> -->
-        <div class="account">
-            <a href="login.php">Личный кабинет</a>
-        </div>
-    </header>
+    <?php
+    include('header.php');
+    ?>
     <section class="content">
         <div class="left">
                 <form action="." method="get">
@@ -52,14 +39,8 @@ $src = $products;
             </div>
         </div>
     </section>
-    <footer>
-        <div class="copirigth">
-            <ul>
-                <li>Связаться с нами</li>
-                <li>+7 495 000 00 00</li>
-            </ul>
-
-        </div>
-    </footer>
+    <?php
+    include('footer.php');
+    ?>
 </body>
 </html>

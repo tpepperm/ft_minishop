@@ -1,0 +1,49 @@
+.user-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    background-color: white;
+    margin: 5vh 15vw;
+    width: 70vw;
+    height: 70vh;
+}
+
+.user-login{
+    width: 50vw;
+    /*height: 70px;*/
+    color: white;
+    background-color: black;
+    margin: 50px 50px 20px 50px;
+}
+
+.user-repair{
+    width: 30wv;
+    /*height: 70px;*/
+    color: white;
+    background-color: saddlebrown;
+    margin: 50px 50px 20px 50px;
+}
+
+.frm-user-repair{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.frm-user-repair>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.frm-user-repair>div>input{
+    height: 30px;
+    font-size: 24px;
+    width: 20vw;
+    margin-right: 40px;
+}

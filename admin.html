@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin page ft_minishops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <section class="content-a">
+        <div class="cent">
+            <div class="users">
+                <div class="u-create">
+                    <form method="post" action="create_usr.php">
+                        <div class="frm-usr-blc">
+                            <div>СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ</div>
+                            <div class="blc-spn">
+                                <div>
+                                    Имя пользователя:
+                                    <input type="text" pattern="[A-Za-z/d]" minlength="2" maxlength="20">
+                                </div>
+                                <div>
+                                    Пароль:
+                                    <input type="text" minlength="6">
+                                </div>
+                                <div>
+                                    Группа:
+                                    <select>
+                                        <option>Администратор</option>
+                                        <option>Менеджер</option>
+                                        <option>Продавец</option>
+                                        <option>Покупатель</option>
+                                    </select>
+                                </div>
+<!--                                <div class="empty"></div>-->
+                                <div><input type="submit" value="OK"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="u-edit">
+                    <form action="edit_usr.php" method="post">
+                        <div class="frm-usr-blc">
+                            <div>РЕДАКТИРОВАНИЕ ПОЛЬЗОВАТЕЛЯ</div>
+                            <div class="blc-spn">
+                                <div>Имя пользователя: <input type="text" pattern="[A-Za-z/d]" minlength="2" maxlength="20"></div>
+                                <div>Новый пароль: <input type="text" minlength="6"></div>
+                                <div>Подтверждение пароля: <input type="text" minlength="6"></div>
+<!--                                <div class="empty"></div>-->
+                                <div><input type="submit" value="OK"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="u-del">
+                    <form action="del_usr.php" method="post">
+                        <div class="frm-usr-blc">
+                            <div>УДАЛЕНИЕ ПОЛЬЗОВАТЕЛЯ</div>
+                            <div class="blc-spn">
+                                <div>Имя пользователя: <input type="text" pattern="[A-Za-z/d]" minlength="2" maxlength="20"></div>
+                                <div>Повторите имя пользователя: <input type="text" pattern="[A-Za-z/d]" minlength="2" maxlength="20"></div>
+<!--                                <div class="empty"></div>-->
+                                <div><input type="submit" value="OK"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="order">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

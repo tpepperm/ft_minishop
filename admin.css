@@ -1,0 +1,84 @@
+.content-a{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+    background-color: #7d40bb;
+}
+
+.cent {
+    margin: 30px;
+    width: 95%;
+    min-width: 1000px;
+    background-color: #ffffffaa;
+    display: flex;
+    flex-direction: column;
+}
+
+.users{
+    margin: 20px;
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.u-create, .u-edit, .u-del{
+    margin: 10px 10px 10px 14px;
+    background-color: #ffffff55;
+    width: 29%;
+
+}
+
+.frm-usr-blc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;+
+}
+
+
+.blc-spn {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.blc-spn>div{
+    /*background-color: rgba(0, 0, 51, 0.4);*/
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5px;
+    height: 35px;
+    width: 100%;
+}
+
+.blc-spn>div:last-child{
+    /*background-color: white;*/
+    justify-content: center;
+}
+
+.empti{
+    flex: 1 0 auto;
+}
+
+.create{
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+}
+
+.orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    padding: 2vh 2vw;
+    background-color: brown;
+}
+
+.order{
+    width: 95%;
+    height: 90%;
+    background-color: #5dfcff;
+}
