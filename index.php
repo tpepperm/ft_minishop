@@ -1,7 +1,7 @@
 <?php
 include("database.php");
 $src = $products;
-if ($_GET["submit"] == "Submit")
+if ($_GET["submit"] == "OK")
 {
     $src = $square_products;
 }
@@ -16,16 +16,25 @@ $src = $products;
                 <form action="." method="get">
                     <div class="frm-fld">
                         <div class="check">
-                            <input type="checkbox" name="form" value="form">
-                            <label for="form">форма</label>
+                            <ul><b>форма</b></label>
+                            <li><input type="checkbox" name="form" value="form">круг</li>
+                            <li><input type="checkbox" name="form" value="form">квадрат</li>
+                            <li><input type="checkbox" name="form" value="form">прямоугольник</li>
+                            </ul>
                         </div>
                         <div class="check">
-                            <input type="checkbox" name="form" value="color">
-                            <label for="color">цвет</label>
+                            <ul><b>цвет</b></label>
+                            <li><input type="checkbox" name="form" value="form">красный</li>
+                            <li><input type="checkbox" name="form" value="form">зеленый</li>
+                            <li><input type="checkbox" name="form" value="form">синий</li>
+                            </ul>
                         </div>
                         <div class="check">
-                            <input type="checkbox" name="form" value="material">
-                            <label for="material">материал</label>
+                            <ul><b>материал</b></label>
+                            <li><input type="checkbox" name="form" value="form">шерсть</li>
+                            <li><input type="checkbox" name="form" value="form">шелк</li>
+                            <li><input type="checkbox" name="form" value="form">синтетика</li>
+                            </ul>
                         </div>
                         <input type="submit" name="submit" value="OK">
                     </div>

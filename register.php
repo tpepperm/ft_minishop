@@ -2,6 +2,7 @@
 include('header.php');
 include('database.php');
 ?>
+<link rel="stylesheet" href="loginform.css">
 <form action="register.php" method="POST">
     <div class="login-form">
         <h3>Зарегистрироваться</h3>

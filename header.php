@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>ft_minishop</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="card.css"> -->
-    <link rel="stylesheet" href="loginform.css">
     <link rel="stylesheet" href="user_page.css">
     <link rel="stylesheet" href="admin.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">

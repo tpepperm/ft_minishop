@@ -2,6 +2,10 @@
     font-family: 'Crimson Text', serif;
 }
 
+footer {
+    position: fixed;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -9,7 +13,6 @@
     margin: 5rem;
     padding: 5rem;
     padding-top: 2rem;
-    background-color: gray;
 }
 
 .login-form>div {
