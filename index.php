@@ -1,12 +1,12 @@
 <?php
 include("database.php");
 $src = $products;
-if ($_GET["submit"] == "Submit")
-{
-    $src = $square_products;
-}
-else
-    $src = $products;
+// if ($_GET["submit"] == "Submit")
+// {
+    // $src = $square_products;
+// }
+// else
+$src = $products;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,27 +49,7 @@ else
                 <?php
                 include("div.php");
                 ?>
-                <!-- <div class="cart">
-                    <div class="pic">
-
-                    </div>
-                    <div class="buy">
-                        <div class="price">
-                            <span>999.99$</span>
-                        </div>
-                        <div class="add-to-cart">
-                            <button type="submit">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart"></div>
-                <div class="cart"></div> -->
             </div>
-            <!-- <div class="string">
-                <div class="cart"></div>
-                <div class="cart"></div>
-                <div class="cart"></div>
-            </div> -->
         </div>
     </section>
     <footer>

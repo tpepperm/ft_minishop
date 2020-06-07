@@ -116,6 +116,10 @@ footer{
     height: 100%;
 }
 
+#title {
+    font-size: 10px;
+}
+
 
 .add-to-cart{
     width: 50%;
